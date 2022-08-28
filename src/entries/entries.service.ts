@@ -19,17 +19,7 @@ interface Entry {
 
 @Injectable()
 export class EntriesService {
-    private entries: Entry[] = [{
-        id: "1",
-        time: ["00:00", "06:00"],
-        title: "Просмотр фильма 🎥",
-        date: "2022-08-15",
-        color: "blue",
-        darkColor: "sky",
-        periodic: "no-repeat",
-        userId: "2",
-        username: "Test"
-    }]
+    private entries: Entry[] = []
 
     getAll(): Entry[] {
         return this.entries
